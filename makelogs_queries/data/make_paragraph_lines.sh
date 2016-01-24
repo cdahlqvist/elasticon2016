@@ -1,0 +1,1 @@
+sed '/CHAPTER/d' | perl -pe 's/\"//g'  | perl -pe 's/\s$/ /g' | perl -pe 's/\.\s\s+/\n/g' | perl -pe 's/\s\s+/ /g' | perl -pe 's/^\s+//g'
