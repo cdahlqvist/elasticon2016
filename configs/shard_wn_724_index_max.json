@@ -1,10 +1,9 @@
 {
   "jobs": [
     {
-      "job_id": "shard_wn_724_index_1k",
+      "job_id": "shard_wn_724_index_max",
       "concurrency": 4,
       "driver": "makelogs",
-      "rate_limit":2,
       "parameters": {
         "batch_size":500,
         "days":"2016-01-01,2016-01-31",           
