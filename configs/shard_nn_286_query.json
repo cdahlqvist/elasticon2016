@@ -1,0 +1,168 @@
+{
+  "jobs" : [
+    {
+      "job_id": "shard_nn_286_query",
+      "concurrency": 1,
+      "driver": "makelogs_queries",
+      "cycle_operations": false,
+      "parameters": {
+        "index_pattern": "shard_nn_286",
+        "days": "2016-01-28,2016-01-31",
+        "period": 28,
+        "terms_file": "./makelogs_queries/data/WarAndPeace_286_terms.txt"
+      },
+      "operations": [
+        {
+          "label": "match_query_f10_m0",
+          "name": "match_query",
+          "weight": 1,
+          "parameters": {
+            "fetch_size": 10,
+            "match_term_count": 0
+          }
+        },
+        {
+          "label": "match_query_f10_m1",
+          "name": "match_query",
+          "weight": 1,
+          "parameters": {
+            "fetch_size": 10,
+            "match_term_count": 1
+          }
+        },
+        {
+          "label": "match_query_f10_m10",
+          "name": "match_query",
+          "weight": 1,
+          "parameters": {
+            "fetch_size": 10,
+            "match_term_count": 10
+          }
+        },
+        {
+          "label": "match_query_f100_m0",
+          "name": "match_query",
+          "weight": 1,
+          "parameters": {
+            "fetch_size": 100,
+            "match_term_count": 0
+          }
+        },
+        {
+          "label": "match_query_f100_m1",
+          "name": "match_query",
+          "weight": 1,
+          "parameters": {
+            "fetch_size": 100,
+            "match_term_count": 1
+          }
+        },
+        {
+          "label": "match_query_f100_m10",
+          "name": "match_query",
+          "weight": 1,
+          "parameters": {
+            "fetch_size": 100,
+            "match_term_count": 10
+          }
+        },
+        {
+          "label": "stats_by_ip_agg_m0",
+          "name": "stats_by_ip_agg",
+          "weight": 1,
+          "parameters": {
+            "match_term_count": 0
+          }
+        },
+        {
+          "label": "stats_by_ip_agg_m1",
+          "name": "stats_by_ip_agg",
+          "weight": 1,
+          "parameters": {
+            "match_term_count": 1
+          }
+        },
+        {
+          "label": "stats_by_ip_agg_m10",
+          "name": "stats_by_ip_agg",
+          "weight": 1,
+          "parameters": {
+            "match_term_count": 10
+          }
+        },
+        {
+          "label": "responsecode_date_histogram_agg_m0",
+          "name": "responsecode_date_histogram_agg",
+          "weight": 1,
+          "parameters": {
+            "match_term_count": 0
+          }
+        },
+        {
+          "label": "responsecode_date_histogram_agg_m1",
+          "name": "responsecode_date_histogram_agg",
+          "weight": 1,
+          "parameters": {
+            "match_term_count": 1
+          }
+        },
+        {
+          "label": "responsecode_date_histogram_agg_m10",
+          "name": "responsecode_date_histogram_agg",
+          "weight": 1,
+          "parameters": {
+            "match_term_count": 10
+          }
+        },
+        {
+          "label": "filtered_kibana_msearch_m0",
+          "name": "filtered_kibana_msearch",
+          "weight": 1,
+          "parameters": {
+            "match_term_count": 0
+          }
+        },
+        {
+          "label": "filtered_kibana_msearch_m1",
+          "name": "filtered_kibana_msearch",
+          "weight": 1,
+          "parameters": {
+            "match_term_count": 1
+          }
+        },
+        {
+          "label": "filtered_kibana_msearch_m10",
+          "name": "filtered_kibana_msearch",
+          "weight": 1,
+          "parameters": {
+            "match_term_count": 10
+          }
+        },
+        {
+          "label": "kibana_msearch_m0",
+          "name": "kibana_msearch",
+          "weight": 1,
+          "parameters": {
+            "match_term_count": 0
+          }
+        },
+        {
+          "label": "kibana_msearch_m1",
+          "name": "kibana_msearch",
+          "weight": 1,
+          "parameters": {
+            "match_term_count": 0
+          }
+        },
+        {
+          "label": "kibana_msearch_m10",
+          "name": "kibana_msearch",
+          "weight": 1,
+          "parameters": {
+            "match_term_count": 10
+          }
+        }
+      ]
+    }
+  ]
+}
