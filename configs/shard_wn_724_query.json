@@ -4,7 +4,7 @@
       "job_id": "shard_wn_724_query",
       "concurrency": 1,
       "driver": "makelogs_queries",
-      "cycle_operations": false,
+      "cycle_operations": true,
       "parameters": {
         "index_pattern": "shard_wn_724",
         "days": "2016-01-28,2016-01-31",
