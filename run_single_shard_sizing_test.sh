@@ -3,11 +3,11 @@
 INDEXNAME=$1
 RUNTIMESTAMP=$2
 ITERATIONS=$3
-RUNID="$$RUNTIMESTAMP_$INDEXNAME"
+RUNID="$RUNTIMESTAMP_$INDEXNAME"
 
 curl -XDELETE https://$ES_HOST/shard* -u $ES_USER:$ES_PASSWORD
 
-for (( i = 1; i <= $ITERATIONS; i+= 2000 ))
+for (( i = 1; i <= $ITERATIONS; i+= 1 ))
 do
   $RANKIN_PATH/bin/rankin -h $ES_HOST -c $ES_USER:$ES_PASSWORD -r $RUNID_index -i 0 -d 10 -f ./configs/$INDEXNAME_index_2.5k.json -a 2
   
