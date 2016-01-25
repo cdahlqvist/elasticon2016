@@ -1,0 +1,24 @@
+{
+  "jobs": [
+    {
+      "job_id": "stats_retrieval",
+      "concurrency": 1,
+      "driver": "example",
+      "rate_limit": 0.034,
+      "cycle_operations": true,
+      "parameters": {
+        "index_pattern": "shard*"
+      },
+      "operations": [
+        {
+          "name": "count",
+          "weight": 1
+        },
+        {
+          "name": "index_size",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}
