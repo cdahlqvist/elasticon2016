@@ -5,6 +5,7 @@
       "concurrency": 1,
       "driver": "makelogs_queries",
       "cycle_operations": true,
+      "rate_limit": 2,
       "parameters": {
         "index_pattern": "shard_wn_286",
         "days": "2016-01-28,2016-01-31",
