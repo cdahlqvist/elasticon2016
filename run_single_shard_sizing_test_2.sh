@@ -7,7 +7,7 @@ RUNID=$RUNTIMESTAMP\_$INDEXNAME
 
 curl -XDELETE https://$ES_HOST2/shard* -u $ES_USER:$ES_PASSWORD
 
-echo "\n"
+echo ""
 
 for (( i = 1; i <= $ITERATIONS; i+= 1 ))
 do
@@ -15,7 +15,7 @@ do
   
   curl https://$ES_HOST2/shard*/_optimize -u $ES_USER:$ES_PASSWORD
 
-  echo "\n"
+  echo ""
 
   sleep 5
 
