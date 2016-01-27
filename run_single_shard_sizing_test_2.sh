@@ -17,7 +17,7 @@ do
 
   echo ""
 
-  sleep 5
+  sleep 60
 
   $RANKIN_PATH/rankin -h $ES_HOST2 -c $ES_USER:$ES_PASSWORD -p https -r $RUNID\_query -i 0 -d 3 -f ./configs/$INDEXNAME\_query.json -f ./configs/stats_retrieval.json  -f ./configs/cluster.json -a 2  -D ./results
 done
