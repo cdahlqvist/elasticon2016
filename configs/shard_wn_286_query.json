@@ -114,54 +114,6 @@
           "parameters": {
             "match_term_count": 10
           }
-        },
-        {
-          "label": "filtered_kibana_msearch_m0",
-          "name": "filtered_kibana_msearch",
-          "weight": 1,
-          "parameters": {
-            "match_term_count": 0
-          }
-        },
-        {
-          "label": "filtered_kibana_msearch_m1",
-          "name": "filtered_kibana_msearch",
-          "weight": 1,
-          "parameters": {
-            "match_term_count": 1
-          }
-        },
-        {
-          "label": "filtered_kibana_msearch_m10",
-          "name": "filtered_kibana_msearch",
-          "weight": 1,
-          "parameters": {
-            "match_term_count": 10
-          }
-        },
-        {
-          "label": "kibana_msearch_m0",
-          "name": "kibana_msearch",
-          "weight": 1,
-          "parameters": {
-            "match_term_count": 0
-          }
-        },
-        {
-          "label": "kibana_msearch_m1",
-          "name": "kibana_msearch",
-          "weight": 1,
-          "parameters": {
-            "match_term_count": 0
-          }
-        },
-        {
-          "label": "kibana_msearch_m10",
-          "name": "kibana_msearch",
-          "weight": 1,
-          "parameters": {
-            "match_term_count": 10
-          }
         }
       ]
     }
